@@ -22,8 +22,8 @@
 //TODO Specify total number of available coins
 //TODO ((uint64_t)(-1)) equals to 18446744073709551616 coins
 //TODO or you can define number explicitly UINT64_C(858986905600000000)
-#define MONEY_SUPPLY                                   
-#define EMISSION_SPEED_FACTOR                           (18)
+#define MONEY_SUPPLY                                    ((unit64_t)(-1))
+#define EMISSION_SPEED_FACTOR                           (20)
 
 //TODO Define number of blocks for block size median calculation
 #define CRYPTONOTE_REWARD_BLOCKS_WINDOW                 100
@@ -37,7 +37,7 @@
 #define DEFAULT_FEE                                     
 
 //TODO Define preferred block's target time
-#define DIFFICULTY_TARGET                               120 // seconds
+#define DIFFICULTY_TARGET                               90 // seconds
 //TODO There are options to tune CryptoNote's difficulty retargeting function. 
 //TODO We recommend not to change it.
 #define DIFFICULTY_WINDOW                               720 // blocks
@@ -80,7 +80,7 @@
 #define ALLOW_DEBUG_COMMANDS
 
 //TODO Put here the name of your currency
-#define CRYPTONOTE_NAME                         
+#define CRYPTONOTE_NAME                         "kemetcoin"
 #define CRYPTONOTE_BLOCKS_FILENAME              "blocks.dat"
 #define CRYPTONOTE_BLOCKINDEXES_FILENAME        "blockindexes.dat"
 #define CRYPTONOTE_BLOCKSCACHE_FILENAME         "blockscache.dat"
